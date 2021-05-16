@@ -64,7 +64,7 @@ app.post("/flips", (request, response, next) => {
     // The code above added a chained method call to .status(201) to change the status code from 200 (the default for success) to 201.
   } else {
     // return 400 if the result property is missing or empty.
-    // call sendStatus() on the response to quickly set the response HTTP status code and send its string representation as the response body.
+    // call sendStatus() on the response to quickly set the response HTTP status code AND send its string representation as the response body.
     response.sendStatus(400);
   }
 });
